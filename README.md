@@ -40,6 +40,10 @@ cd "\GameStore.Api"
 dotnet run
 ```
 
+Open this in your browser:
+
+```http://localhost:5000```
+
 The application will:
 
 - configure EF Core with SQL Server
