@@ -46,7 +46,7 @@ Open this in your browser:
 
 The application will:
 
-- configure EF Core with SQL Server
+- configure EF Core 
 - seed initial data if needed
 - serve static files from `wwwroot`
 - expose game and genre endpoints
