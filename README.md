@@ -83,3 +83,5 @@ The project uses minimal API endpoints registered in `GameStore.Api/Endpoint`.
 - Update DTO or model classes to extend the API.
 
 
+
+
