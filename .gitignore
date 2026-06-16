@@ -1,0 +1,51 @@
+# Build folders
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider files
+.idea/
+*.sln.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+# The packages folder can be ignored because of PackageReference
+**/packages/*
+
+# Visual Studio cache
+*.cache
+
+# Logs
+*.log
+
+# SQLite database
+*.db
+
+# Entity Framework migrations
+Migrations/
+
+# Debug files
+*.pdb
+*.dll
+*.exe
+*.class
+
+# Test results
+TestResults/
+
+# Publish output
+publish/
+
+# Rider project files
+*.idea/
+*.sln.iml

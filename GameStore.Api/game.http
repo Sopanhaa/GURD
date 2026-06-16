@@ -1,0 +1,31 @@
+GET  http://localhost:5255/games/
+
+### 
+GET http://localhost:5255/games/1
+
+### 
+
+POST http://localhost:5255/games/
+Content-Type: application/json
+
+{
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "genre": "Action-adventure",
+    "price": 59.99,
+    "releaseDate": "2017-03-03"
+}
+
+
+### Update game
+PUT http://localhost:5255/games/1
+Content-Type: application/json
+
+{
+    "name": "Updated Zelda",
+    "genre": "Adventure",
+    "price": 49.99,
+    "releaseDate": "2017-03-03"
+}
+
+### Delete game
+DELETE http://localhost:5255/games/1

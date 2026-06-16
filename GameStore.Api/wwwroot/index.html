@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="toolbar" aria-label="Game store controls">
+      <div>
+        <p class="eyebrow">Inventory</p>
+        <h1>Game Store</h1>
+      </div>
+      <button class="icon-button" id="refreshButton" type="button" title="Refresh games" aria-label="Refresh games">
+        <span aria-hidden="true">Refresh</span>
+      </button>
+    </section>
+
+    <section class="workspace">
+      <form class="editor" id="gameForm">
+        <div class="form-heading">
+          <h2 id="formTitle">Add game</h2>
+          <button class="ghost-button hidden" id="cancelEditButton" type="button">Cancel edit</button>
+        </div>
+
+        <input id="gameId" type="hidden">
+
+        <label>
+          Name
+          <input id="nameInput" name="name" type="text" placeholder="Game title" required>
+        </label>
+
+        <label>
+          Genre
+          <select id="genreInput" name="genre" required>
+            <option value="">Choose a genre</option>
+          </select>
+        </label>
+
+        <div class="split-fields">
+          <label>
+            Price
+            <input id="priceInput" name="price" type="number" min="0" step="0.01" placeholder="0.00" required>
+          </label>
+
+          <label>
+            Release date
+            <input id="releaseDateInput" name="releaseDate" type="date" required>
+          </label>
+        </div>
+
+        <button class="primary-button" id="saveButton" type="submit">Save game</button>
+      </form>
+
+      <section class="games-panel" aria-labelledby="gamesHeading">
+        <div class="panel-heading">
+          <div>
+            <h2 id="gamesHeading">Games</h2>
+            <p id="gameCount">Loading...</p>
+          </div>
+          <div class="status" id="statusMessage" role="status" aria-live="polite"></div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Genre</th>
+                <th>Price</th>
+                <th>Release</th>
+                <th class="actions-column">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="gamesTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
