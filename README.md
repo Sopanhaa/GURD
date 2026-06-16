@@ -1,6 +1,6 @@
 # GameStore.Api
 
-A minimal ASP.NET Core Web API for managing games and genres, backed by Entity Framework Core with SQL Server.
+A minimal ASP.NET Core Web API for managing games and genres, backed by Entity Framework Core .
 
 ## Project Structure
 
@@ -14,7 +14,7 @@ A minimal ASP.NET Core Web API for managing games and genres, backed by Entity F
 ## Requirements
 
 - .NET 10 SDK
-- SQL Server instance
+
 
 ## Configuration
 
